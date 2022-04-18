@@ -1,0 +1,118 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+{% if form != None %}
+<br><h2>Заполните следующие поля:</h2>
+<div class="myForm">
+    <form method="post">
+        {% csrf_token %}
+        <label for="{{ form.name.id_for_label }}">{{ form.name.label }}:</label>
+        {{ form.name }} <br>
+        <label for="{{ form.city.id_for_label }}">{{ form.city.label }}:</label>
+        {{ form.city }} <br>
+        <label for="{{ form.gender.id_for_label }}">{{ form.gender.label }}:</label>
+        {{ form.gender }}
+        <label for="{{ form.product.id_for_label }}">{{ form.product.label }}:</label>
+        {{ form.product }} <br>
+        <label for="{{ form.notice.id_for_label }}">{{ form.notice.label }}:</label>
+        {{ form.notice }} <br><br>
+        <label for="{{ form.email.id_for_label }}">{{ form.email.label }}:</label>
+        {{ form.email }} <br>
+        <label for="{{ form.messge.id_for_label }}">{{ form.message.label }}:</label>
+        {{ form.message }} <br>
+        <input id="btnSub" type="submit" value="Отправить" class="btn btn-default" />
+    </form>
+</div>
+{% else %}
+<br><h2>Благодарим за оставленный отзыв!</h2>
+<h3>Вы указали следующее:</h3>
+<ul>
+    <li>Имя: {{ data.name }}</li>
+    <li>Город: {{ data.city }}</li>
+    <li>Пол: {{ data.gender }}</li>
+    <li>Продукт, который больше всего понравился на сайте: {{ data.product}} </li>
+    <li>Получать новости сайта на e-mail: {{data.notice}} </li>
+    <li>Ваш e-mail: {{ data.email }} </li>
+    <li>Отзывы и предложения: {{ data.message }}</li>
+</ul>
+{% endif %}
+
+<script>
+
+function myInput_focus1()
+{
+    $('#myInput1').css('background-color', 'LightCyan');
+}
+function myInput_blur1()
+{
+    $('#myInput1').css('background-color', 'white');
+}
+
+function myInput_focus2()
+{
+    $('#myInput2').css('background-color', 'LightCyan');
+}
+function myInput_blur2()
+{
+    $('#myInput2').css('background-color', 'white');
+}
+
+function myInput_focus3()
+{
+    $('#myInput3').css('background-color', 'LightCyan');
+}
+function myInput_blur3()
+{
+    $('#myInput3').css('background-color', 'white');
+}
+
+function myInput_focus4()
+{
+    $('#myInput4').css('background-color', 'LightCyan');
+}
+function myInput_blur4()
+{
+    $('#myInput4').css('background-color', 'white');
+    }
+
+function myInput_focus5()
+{
+    $('#myInput5').css('background-color', 'LightCyan');
+}
+function myInput_blur5()
+{
+    $('#myInput5').css('background-color', 'white');
+}
+
+
+function btnSub_mouseover()
+{
+    $('#btnSub').css('background-color', 'LightCyan');
+    $('#btnSub').css('color', 'Navy');
+}
+function btnSub_mouseout()
+{
+    $('#btnSub').css('background-color', 'white');
+    $('#btnSub').css('color', 'black');
+}
+$('#myInput1').focus(myInput_focus1);
+$('#myInput1').blur(myInput_blur1);
+
+$('#myInput2').focus(myInput_focus2);
+$('#myInput2').blur(myInput_blur2);
+
+
+$('#myInput3').focus(myInput_focus3);
+$('#myInput3').blur(myInput_blur3);
+
+$('#myInput4').focus(myInput_focus4);
+$('#myInput4').blur(myInput_blur4);
+
+$('#myInput5').focus(myInput_focus5);
+$('#myInput5').blur(myInput_blur5);
+
+$('#btnSub').mouseover(btnSub_mouseover);
+$('#btnSub').mouseout(btnSub_mouseout);
+</script>
+{% endblock %}

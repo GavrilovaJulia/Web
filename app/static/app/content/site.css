@@ -1,0 +1,189 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background: url(bg.jpg);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background: white;
+    box-shadow: rgb(98,101,103) 10px 20px 30px;
+    border-radius: 3px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.ufLinks {
+    margin: 30px;
+    width: 220px;
+    height: 80px;
+}
+
+#imgPrev {
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: black;
+    background: url(bg_main9.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.myBtn {
+    background-color: lightcyan;
+    border: 2px solid gray;
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+        background-color: #6eeeff;
+}
+
+.btnImg {
+    width: 75px;
+    height: 75px;
+}
+
+.btnClass {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.myForm textarea {
+    resize: none;
+}
+
+.myForm li {
+    list-style-type: none;
+}
+
+.myForm ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navbar {
+    background-color: #333333;
+}
+
+.navbarText {
+    color: lightgray !important;
+    margin-top: 15px;
+}
+.carouselDescript {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.readMore {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: black !important;
+    background-color: lightpink;
+    border-radius: 50%;
+}
+
+.blogDescript {
+    border-radius: 20px;
+    box-shadow: 0 15px 20px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.aboutText {
+    font-size: 17px;
+}
+
+#id_title, #id_description, #id_content, #id_text, #id_username, #id_password1, #id_password2 {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+#id_description, #id_content, #id_text {
+    width: 500px;
+    height: 200px;
+}
+
+.commentDiv {
+    border: 1px solid #20B2AA;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}

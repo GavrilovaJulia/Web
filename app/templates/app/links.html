@@ -1,0 +1,13 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<h2 align="center">{{ title }}</h2>
+
+<div align="center"> 
+    <a href="https://vsemotki.ru/" target="_blank"><img class="ufLinks" src="{% static 'app/content/logo-vsemotki.png' %}" alt="logo_vsemotki" /></a>
+    <a href="https://shemyuzorov.com/" target="_blank"><img class="ufLinks" src="{% static 'app/content/shemy_uzorov_logo.png' %}" alt="shemy_uzorov_logo" /></a>
+    <a href="https://vse-sama.ru/" target="_blank"><img class="ufLinks" src="{% static 'app/content/logo_vsesama.png' %}" alt="logo_vsesama" /></a>
+</div>
+{% endblock %}
